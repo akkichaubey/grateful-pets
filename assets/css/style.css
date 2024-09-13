@@ -1,0 +1,342 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/*==============================================================
+	Common Styles Initials
+==============================================================*/
+
+html {
+    -webkit-text-size-adjust: none;
+    /* Prevent font scaling in landscape */
+    width: 100%;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: inherit !important;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #01203d;
+    font-weight: 400;
+    background: #ffffff;
+    width: 100%;
+    min-height: 100%;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    scrollbar-color: #01203d #e5e5e5;
+    scrollbar-width: thin;
+}
+
+body.pause {
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e5e5e5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #01203d;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #01203d;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: #495057;
+}
+
+a:hover, a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+.btn:focus {
+    color: #fff;
+    box-shadow: none;
+}
+
+input,textarea,select {
+    outline: none;
+    resize: none;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+a,
+input,
+button {
+    outline: none !important;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p {
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+
+.slick-slide {
+    outline: none !important;
+}
+
+input[type="search"]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type="search"]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.search-dropdown input {
+    -webkit-appearance: textfield;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+/*==============================================================
+	Bootstrap Hack
+==============================================================*/
+
+.form-control::-webkit-input-placeholder {
+    opacity: 1;
+    color: #9EA4AE;
+}
+
+.form-control:-moz-placeholder {
+    opacity: 1;
+    color: #9EA4AE;
+}
+
+.form-control::-moz-placeholder {
+    opacity: 1;
+    color: #9EA4AE;
+}
+
+.form-control:-ms-input-placeholder {
+    opacity: 1;
+    color: #9EA4AE;
+}
+
+input::-webkit-input-placeholder {
+    opacity: 1;
+}
+
+input:-moz-placeholder {
+    opacity: 1;
+}
+
+input::-moz-placeholder {
+    opacity: 1;
+}
+
+input:-ms-input-placeholder {
+    opacity: 1;
+}
+
+.row {
+    --bs-gutter-x: 32px;
+    --bs-gutter-y: 0; 
+}
+/*==============================================================
+	Custom Style
+==============================================================*/
+
+.container {
+    max-width: 1320px;
+    width: 100%;
+    padding: 0 16px;
+}
+
+
+/*==============================================================
+	Button Style
+==============================================================*/
+.btn {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #FFF;
+    display: inline-block;
+    background: #0F1A3F;
+    border-radius: 3px;
+    padding: 12px 32px 12px 32px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: none;
+    border: 0;
+    outline: none;
+}
+.btn.btn-white {
+    color: #0F1A3F;
+    background: #FFF;
+    border: 1px solid #0F1A3F;
+}
+.btn.btn-small {
+    font-size: 16px;
+    line-height: 26px;
+    padding: 10px 24px 10px 24px;
+    font-weight: 400;
+}
+.btn:hover,
+.btn:focus,
+.btn:focus-visible {
+    background: #1B2F4D;
+    color: #fff;
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    background: #1B2F4D;
+    color: #fff;
+}
+
+.btn-link {
+    color: #0F1A3F;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-decoration: underline;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in-out;
+}
+.btn-link:hover,
+.btn-link:focus {
+    color: #1B2F4D;
+    text-decoration: underline;
+}
+/*==============================================================
+	Common Css 
+==============================================================*/
+
+.h1 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 56px;
+    line-height: 1.3;
+    color: #0F1A3F;
+    margin: 0;
+    font-weight: 800;
+}
+
+.h2 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 48px;
+    line-height: 1.3;
+    color: #0F1A3F;
+    margin: 0;
+    font-weight: 700;
+}
+
+.h3 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 40px;
+    line-height: 1.3;
+    color: #0F1A3F;
+    margin: 0;
+    font-weight: 600;
+}
+
+.h4 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 36px;
+    line-height: 1.3;
+    color: #0F1A3F;
+    margin: 0;
+    font-weight: 500;
+}
+
+.h5 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 24px;
+    line-height: 1.3;
+    color: #0F1A3F;
+    margin: 0;
+    font-weight: 500;
+}
+
+.h6 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #0F1A3F;
+    margin: 0;
+    font-weight: 500;
+}
+
+p:last-child {
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+}
