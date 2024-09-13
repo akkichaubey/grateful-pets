@@ -1,6 +1,224 @@
 @charset "UTF-8";
 
+:root {
+    --white: #fff;
+    --black: #000;
+    --primary: #00adb3;
+    --primary-900: #00aeb4;
+    --primary-800: #79ffff;
+    --primary-700: #b8ebeb;
+    --primary-100: #0d3b45;
+    --primary-200: #083d46;
+    --secondary: #ff6351;
+    --grey-500: #fffeff;
+    --grey-600: #e6e6e6;
+    --grey-700: #cbbfbf;
+    --grey-800: #4b4b4b;
+    --grey-900: #3e3e3e;
+    --pink: #f54bf9;
+
+
+    --font-primary: 'Plus Jakarta Sans', sans-serif;
+    --font-title: 'Akira Expanded', sans-serif;
+    --font-matchmaker: 'Matchmaker', sans-serif;
+    --font-rogbold: 'Rogbold', sans-serif;
+    --font-klose-condensed: 'Klose-Condensed', sans-serif;
+}
+
 /* CSS Document */
+
+/* fonts */
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/PlusJakartaSans-Light.woff2') format('woff2'),
+        url('../fonts/PlusJakartaSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/PlusJakartaSans-LightItalic.woff2') format('woff2'),
+        url('../fonts/PlusJakartaSans-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/PlusJakartaSans-Medium.woff2') format('woff2'),
+        url('../fonts/PlusJakartaSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/PlusJakartaSans-MediumItalic.woff2') format('woff2'),
+        url('../fonts/PlusJakartaSans-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/PlusJakartaSans-Regular.woff2') format('woff2'),
+        url('../fonts/PlusJakartaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/PlusJakartaSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/PlusJakartaSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Matchmaker';
+    src: url('../fonts/Matchmaker.woff2') format('woff2'),
+        url('../fonts/Matchmaker.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/PlusJakartaSans-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/PlusJakartaSans-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Akira Expanded';
+    src: url('../fonts/AkiraExpanded-SuperBold.woff2') format('woff2'),
+        url('../fonts/AkiraExpanded-SuperBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rogbold';
+    src: url('../fonts/Rogbold.woff2') format('woff2'),
+        url('../fonts/Rogbold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klose-Condensed';
+    src: url('../fonts/Klose-Condensed.woff2') format('woff2'),
+        url('../fonts/Klose-Condensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klose-Expanded';
+    src: url('../fonts/Klose-Expanded.woff2') format('woff2'),
+        url('../fonts/Klose-Expanded.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KloseVariable';
+    src: url('../fonts/KloseVariable.woff2') format('woff2'),
+        url('../fonts/KloseVariable.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klose-SemiExpanded';
+    src: url('../fonts/Klose-SemiExpanded.woff2') format('woff2'),
+        url('../fonts/Klose-SemiExpanded.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Klose-Normal';
+    src: url('../fonts/Klose-Normal.woff2') format('woff2'),
+        url('../fonts/Klose-Normal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/PlusJakartaSans-Bold.woff2') format('woff2'),
+        url('../fonts/PlusJakartaSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/PlusJakartaSans-BoldItalic.woff2') format('woff2'),
+        url('../fonts/PlusJakartaSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/PlusJakartaSans-ExtraBold.woff2') format('woff2'),
+        url('../fonts/PlusJakartaSans-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/PlusJakartaSans-ExtraLight.woff2') format('woff2'),
+        url('../fonts/PlusJakartaSans-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/PlusJakartaSans-ExtraBoldItalic.woff2') format('woff2'),
+        url('../fonts/PlusJakartaSans-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/PlusJakartaSans-ExtraLightItalic.woff2') format('woff2'),
+        url('../fonts/PlusJakartaSans-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+/* fonts */
 
 
 /*==============================================================
@@ -29,17 +247,17 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    color: #01203d;
+    color: var(--black);
     font-weight: 400;
-    background: #ffffff;
+    background: var(--white);
     width: 100%;
     min-height: 100%;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
-    scrollbar-color: #01203d #e5e5e5;
+    scrollbar-color: var(--primary-200) var(--grey-500);
     scrollbar-width: thin;
 }
 
@@ -52,37 +270,40 @@ body.pause {
 }
 
 ::-webkit-scrollbar-track {
-    background: #e5e5e5;
+    background: var(--grey-500);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #01203d;
+    background: var(--primary-200);
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-    background: #01203d;
+    background: var(--primary-200);
 }
 
 a {
     outline: none;
     text-decoration: none;
-    color: #495057;
+    color: var(--black);
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
     outline: none;
     text-decoration: none;
 }
 
 .btn:focus {
-    color: #fff;
+    color: var(--black);
     box-shadow: none;
 }
 
-input,textarea,select {
+input,
+textarea,
+select {
     outline: none;
     resize: none;
-    font-family: 'Fira Sans', sans-serif;
+    /* font-family: 'Fira Sans', sans-serif; */
 }
 
 a,
@@ -103,8 +324,8 @@ h5,
 h6 {
     margin: 0;
     padding: 0;
-    font-weight: normal;
-    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-family: 'Akira Expanded', sans-serif;
 }
 
 img {
@@ -124,10 +345,6 @@ ol {
 p {
     margin: 0 0 15px 0;
     padding: 0;
-}
-
-.slick-slide {
-    outline: none !important;
 }
 
 input[type="search"]::-ms-clear {
@@ -206,8 +423,9 @@ input:-ms-input-placeholder {
 
 .row {
     --bs-gutter-x: 32px;
-    --bs-gutter-y: 0; 
+    --bs-gutter-y: 0;
 }
+
 /*==============================================================
 	Custom Style
 ==============================================================*/
@@ -223,43 +441,60 @@ input:-ms-input-placeholder {
 	Button Style
 ==============================================================*/
 .btn {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: var(--font-primary);
     font-size: 18px;
-    line-height: 28px;
-    font-weight: 500;
-    color: #FFF;
+    line-height: 1;
+    font-weight: 600;
+    color: var(--white);
     display: inline-block;
-    background: #0F1A3F;
-    border-radius: 3px;
-    padding: 12px 32px 12px 32px;
+    background: var(--primary);
+    border-radius: 100px;
+    padding: 21px 37px 25px;
     transition: all 0.3s ease-in-out;
     box-shadow: none;
     border: 0;
     outline: none;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    /* box-shadow: 0 15px 3px var(--primary-900); */
 }
-.btn.btn-white {
+
+.btn:is(:hover, :focus, :active) {
+    color: var(--primary);
+    background: var(--white);
+    border-color: var(--primary);
+}
+
+/* .btn.btn-white {
     color: #0F1A3F;
-    background: #FFF;
-    border: 1px solid #0F1A3F;
-}
-.btn.btn-small {
+    background: var(--primary-800);
+    border-color: var(--primary-800);
+} */
+
+/* .btn.btn-small {
     font-size: 16px;
     line-height: 26px;
     padding: 10px 24px 10px 24px;
     font-weight: 400;
-}
-.btn:hover,
+} */
+
+/* .btn:hover,
 .btn:focus,
 .btn:focus-visible {
     background: #1B2F4D;
     color: #fff;
-}
-.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+} */
+
+/* .btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
     background: #1B2F4D;
     color: #fff;
-}
+} */
 
-.btn-link {
+/* .btn-link {
     color: #0F1A3F;
     font-size: 18px;
     font-weight: 500;
@@ -267,12 +502,14 @@ input:-ms-input-placeholder {
     text-decoration: underline;
     text-transform: capitalize;
     transition: all 0.3s ease-in-out;
-}
-.btn-link:hover,
+} */
+
+/* .btn-link:hover,
 .btn-link:focus {
     color: #1B2F4D;
     text-decoration: underline;
-}
+} */
+
 /*==============================================================
 	Common Css 
 ==============================================================*/
@@ -340,3 +577,31 @@ p {
     line-height: 1.5;
     font-weight: 400;
 }
+
+/* ===== header ===== */
+.header-wrap {
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header-wrap header {}
+
+.header-wrap header .header-top {
+    padding: 10px 0;
+    background: var(--primary-100);
+}
+
+.header-wrap header .header-top p {
+    font-size: 22px;
+    line-height: 1.364;
+    color: var(--white);
+    font-family: var(--font-title);
+    text-align: center;
+}
+
+.header-wrap header .header-bottom {}
+
+/* ===== header ===== */

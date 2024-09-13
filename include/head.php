@@ -3,7 +3,7 @@
 <!-- Theme Color -->
 <meta name="theme-color" content="#182841" />
 <!-- Title -->
-<title>Devson Impex Pvt Ltd</title>
+<title>Light It Up Event</title>
 <!-- Site favicon -->
 <link rel="icon" type="image/png" href="assets/images/favicon.ico" />
 <!-- Mobile Specific Metas -->
