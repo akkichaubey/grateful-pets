@@ -217,7 +217,6 @@
     font-display: swap;
 }
 
-
 /* fonts */
 
 
@@ -609,13 +608,22 @@ p {
     flex-shrink: 0;
 }
 
+.header-wrap header .header-bottom .head-logo a {
+    display: inline-block;
+}
+
+.header-wrap header .header-bottom .head-logo a img {
+    max-width: 265px;
+    transition: all 0.3s ease-in-out;
+}
+
 .header-wrap header .header-bottom .header-menu {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 0 62px;
+    padding: 35px 62px;
 }
 
 header .menu ul {
@@ -624,6 +632,7 @@ header .menu ul {
 }
 
 header .menu ul li a {
+    font-family: var(--font-primary);
     display: inline-block;
     font-size: 18px;
     line-height: 1;
@@ -644,5 +653,79 @@ header .menu ul li.active a {
     border-color: var(--primary-900);
 }
 
+header .head-contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .head-contact ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -24px;
+    padding-right: 24px;
+}
+
+header .head-contact ul li {
+    padding: 0 24px;
+    position: relative;
+}
+
+header .head-contact ul li a {
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 700;
+    color: var(--primary-900);
+    transition: all 0.3s ease-in-out;
+}
+
+header .head-contact ul li a:hover {
+    color: var(--primary-100);
+}
+
+header .head-contact ul li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 18px;
+    width: 2px;
+    margin: auto 0;
+    background: var(--primary-100);
+}
+
+@media(max-width:1740px) {
+    .header-wrap header .header-bottom .header-menu {
+        padding: 10px;
+    }
+
+    .header-wrap header .header-bottom .head-logo a img {
+        max-width: 200px;
+    }
+
+    header .menu ul li a {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    header .head-contact ul {
+        margin: 0 -12px;
+        padding-right: 20px;
+    }
+
+    header .head-contact ul li {
+        padding: 0 12px;
+    }
+
+    header .head-contact ul li a {
+        font-size: 16px;
+    }
+
+
+    /* .header-wrap header .header-bottom .header-menu {
+        padding: 35px 10px;
+    } */
+}
 
 /* ===== header ===== */
