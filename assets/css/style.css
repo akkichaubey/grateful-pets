@@ -1,221 +1,66 @@
 @charset "UTF-8";
 
 :root {
+    /* default */
     --white: #fff;
     --black: #000;
-    --primary: #00adb3;
-    --primary-900: #00aeb4;
-    --primary-800: #79ffff;
-    --primary-700: #b8ebeb;
-    --primary-100: #0d3b45;
-    --primary-200: #083d46;
-    --secondary: #ff6351;
-    --grey-500: #fffeff;
-    --grey-600: #e6e6e6;
-    --grey-700: #cbbfbf;
-    --grey-800: #4b4b4b;
-    --grey-900: #3e3e3e;
-    --pink: #f54bf9;
+
+    /* --primary: #00adb3; */
+    /* --primary-900: #00aeb4; */
+    /* --primary-800: #79ffff; */
+    /* --primary-700: #b8ebeb; */
+    /* --primary-100: #0d3b45; */
+    /* --primary-200: #083d46; */
+
+    /* --secondary: #ff6351; */
+    /* --grey-500: #fffeff; */
+    /* --grey-600: #e6e6e6; */
+    /* --grey-700: #cbbfbf; */
+    /* --grey-800: #4b4b4b; */
+    /* --grey-900: #3e3e3e; */
+    /* --pink: #f54bf9; */
 
 
-    --font-primary: 'Plus Jakarta Sans', sans-serif;
-    --font-title: 'Akira Expanded', sans-serif;
-    --font-matchmaker: 'Matchmaker', sans-serif;
-    --font-rogbold: 'Rogbold', sans-serif;
-    --font-klose-condensed: 'Klose-Condensed', sans-serif;
+    /* new-var */
+    --primary: #fd4f00;
+    --primary-light: #fe5000;
+    --secondary: #5e1f2a;
+    --grey-900: #050505;
+    --grey-800: #151515;
+    --grey-700: #1b1b1b;
+    --grey-600: #a4a3a3;
+    --grey-500: #b1b1b1;
+    --grey-400: #dfd1d3;
+    --grey-300: #f7f7f9;
+
+    --font-primary: 'Poppins', sans-serif;
+
+    --h1: clamp(10px, 4.167vw, 80px);
+    --h2: clamp(10px, 2.604vw, 50px);
+    --h3: clamp(10px, 1.25vw, 24px);
+    --h4: clamp(10px, 1.042vw, 20px);
+    --h5: clamp(10px, 0.938vw, 18px);
+    --h6: clamp(10px, 0.833vw, 16px);
+
+    --title-lg: clamp(10px, 3.125vw, 60px);
+    --title-md: clamp(10px, 2.083vw, 40px);
+    --title-sm: clamp(10px, 1.823vw, 35px);
+    --title-xs: clamp(10px, 1.563vw, 30px);
+
+    --text-md: clamp(20px, 1.354vw, 26px);
+    --text-sm: clamp(18px, 1.042vw, 20px);
+    --text-xs: clamp(16px, 0.938vw, 18px);
+    --text: clamp(16px, 0.833vw, 16px);
+
+    --btn-text: clamp(16px, 0.938vw, 18px);
+
+    --transition: all 0.3s ease-in-out;
 }
 
 /* CSS Document */
 
 /* fonts */
-@font-face {
-    font-family: 'Plus Jakarta Sans';
-    src: url('../fonts/PlusJakartaSans-Light.woff2') format('woff2'),
-        url('../fonts/PlusJakartaSans-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
 
-@font-face {
-    font-family: 'Plus Jakarta Sans';
-    src: url('../fonts/PlusJakartaSans-LightItalic.woff2') format('woff2'),
-        url('../fonts/PlusJakartaSans-LightItalic.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Plus Jakarta Sans';
-    src: url('../fonts/PlusJakartaSans-Medium.woff2') format('woff2'),
-        url('../fonts/PlusJakartaSans-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Plus Jakarta Sans';
-    src: url('../fonts/PlusJakartaSans-MediumItalic.woff2') format('woff2'),
-        url('../fonts/PlusJakartaSans-MediumItalic.woff') format('woff');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Plus Jakarta Sans';
-    src: url('../fonts/PlusJakartaSans-Regular.woff2') format('woff2'),
-        url('../fonts/PlusJakartaSans-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Plus Jakarta Sans';
-    src: url('../fonts/PlusJakartaSans-SemiBold.woff2') format('woff2'),
-        url('../fonts/PlusJakartaSans-SemiBold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Matchmaker';
-    src: url('../fonts/Matchmaker.woff2') format('woff2'),
-        url('../fonts/Matchmaker.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Plus Jakarta Sans';
-    src: url('../fonts/PlusJakartaSans-SemiBoldItalic.woff2') format('woff2'),
-        url('../fonts/PlusJakartaSans-SemiBoldItalic.woff') format('woff');
-    font-weight: 600;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Akira Expanded';
-    src: url('../fonts/AkiraExpanded-SuperBold.woff2') format('woff2'),
-        url('../fonts/AkiraExpanded-SuperBold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Rogbold';
-    src: url('../fonts/Rogbold.woff2') format('woff2'),
-        url('../fonts/Rogbold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Klose-Condensed';
-    src: url('../fonts/Klose-Condensed.woff2') format('woff2'),
-        url('../fonts/Klose-Condensed.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Klose-Expanded';
-    src: url('../fonts/Klose-Expanded.woff2') format('woff2'),
-        url('../fonts/Klose-Expanded.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'KloseVariable';
-    src: url('../fonts/KloseVariable.woff2') format('woff2'),
-        url('../fonts/KloseVariable.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Klose-SemiExpanded';
-    src: url('../fonts/Klose-SemiExpanded.woff2') format('woff2'),
-        url('../fonts/Klose-SemiExpanded.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Klose-Normal';
-    src: url('../fonts/Klose-Normal.woff2') format('woff2'),
-        url('../fonts/Klose-Normal.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Plus Jakarta Sans';
-    src: url('../fonts/PlusJakartaSans-Bold.woff2') format('woff2'),
-        url('../fonts/PlusJakartaSans-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Plus Jakarta Sans';
-    src: url('../fonts/PlusJakartaSans-BoldItalic.woff2') format('woff2'),
-        url('../fonts/PlusJakartaSans-BoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Plus Jakarta Sans';
-    src: url('../fonts/PlusJakartaSans-ExtraBold.woff2') format('woff2'),
-        url('../fonts/PlusJakartaSans-ExtraBold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Plus Jakarta Sans';
-    src: url('../fonts/PlusJakartaSans-ExtraLight.woff2') format('woff2'),
-        url('../fonts/PlusJakartaSans-ExtraLight.woff') format('woff');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Plus Jakarta Sans';
-    src: url('../fonts/PlusJakartaSans-ExtraBoldItalic.woff2') format('woff2'),
-        url('../fonts/PlusJakartaSans-ExtraBoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Plus Jakarta Sans';
-    src: url('../fonts/PlusJakartaSans-ExtraLightItalic.woff2') format('woff2'),
-        url('../fonts/PlusJakartaSans-ExtraLightItalic.woff') format('woff');
-    font-weight: 200;
-    font-style: italic;
-    font-display: swap;
-}
 
 /* fonts */
 
@@ -246,9 +91,9 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: var(--font-primary);
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.875;
     color: var(--black);
     font-weight: 400;
     background: var(--white);
@@ -302,7 +147,6 @@ textarea,
 select {
     outline: none;
     resize: none;
-    /* font-family: 'Fira Sans', sans-serif; */
 }
 
 a,
@@ -324,7 +168,7 @@ h6 {
     margin: 0;
     padding: 0;
     font-weight: 700;
-    font-family: 'Akira Expanded', sans-serif;
+    color: var(--black);
 }
 
 img {
@@ -344,6 +188,10 @@ ol {
 p {
     margin: 0 0 15px 0;
     padding: 0;
+}
+
+p:last-of-type {
+    margin-bottom: 0;
 }
 
 input[type="search"]::-ms-clear {
@@ -430,302 +278,176 @@ input:-ms-input-placeholder {
 ==============================================================*/
 
 .container {
-    max-width: 1320px;
+    max-width: 1630px;
     width: 100%;
     padding: 0 16px;
 }
 
+.container-lg {
+    max-width: 1770px;
+}
+
+.h1 {
+    font-size: var(--h1);
+    line-height: 1;
+}
+
+.h2 {
+    font-size: var(--h2);
+    line-height: 1;
+}
+
+.h3 {
+    font-size: var(--h3);
+    line-height: 1.3;
+}
+
+.h4 {
+    font-size: var(--h4);
+    line-height: 1;
+}
+
+.h5 {
+    font-size: var(--h5);
+    line-height: 1;
+}
+
+.h6 {
+    font-size: var(--h6);
+    line-height: 1;
+}
+
+.title-lg {
+    font-size: var(--title-lg);
+    line-height: 1;
+}
+
+.title-md {
+    font-size: var(--title-md);
+    line-height: 1;
+}
+
+.title-sm {
+    font-size: var(--title-sm);
+    line-height: 1;
+}
+
+.title-xs {
+    font-size: var(--title-xs);
+    line-height: 1;
+}
+
+.text-md {
+    font-size: var(--text-md);
+    line-height: 1.384;
+}
+
+.text-sm {
+    font-size: var(--text-sm);
+    line-height: 1.5;
+}
+
+.text-xs {
+    font-size: var(--text-xs);
+    line-height: 2;
+}
+
+/* space */
+.pt-200 {
+    padding-top: clamp(60px, 10.417vw, 200px);
+}
+
+.pb-200 {
+    padding-bottom: clamp(60px, 10.417vw, 200px);
+}
+
+.pt-180 {
+    padding-top: clamp(50px, 9.375vw, 180px);
+}
+
+.pb-180 {
+    padding-bottom: clamp(50px, 9.375vw, 180px);
+}
+
+.pt-115 {
+    padding-top: clamp(40px, 5.99vw, 115px);
+}
+
+.pb-115 {
+    padding-bottom: clamp(40px, 5.99vw, 115px);
+}
+
+.pt-90 {
+    padding-top: clamp(35px, 4.688vw, 90px);
+}
+
+.pb-90 {
+    padding-bottom: clamp(35px, 4.688vw, 90px);
+}
+
+/* space */
 
 /*==============================================================
 	Button Style
 ==============================================================*/
 .btn {
-    font-family: var(--font-primary);
-    font-size: 18px;
+    font-size: var(--btn-text);
     line-height: 1;
     font-weight: 600;
     color: var(--white);
     display: inline-block;
-    background: var(--primary);
-    border-radius: 100px;
-    padding: 21px 37px 25px;
-    transition: all 0.3s ease-in-out;
+    background: var(--secondary);
+    border-radius: 10px;
+    padding: 17px 26px;
+    transition: var(--transition);
     box-shadow: none;
-    border: 0;
     outline: none;
     text-transform: uppercase;
     border: 1px solid transparent;
-    /* box-shadow: 0 15px 3px var(--primary-900); */
 }
 
-.btn:is(:hover, :focus, :active) {
-    color: var(--primary);
+.btn.btn-primary {
+    background: var(--secondary);
+}
+
+.btn:is(:hover, :focus, :active),
+.btn.btn-outline-primary {
+    color: var(--secondary);
+    border-color: var(--secondary);
     background: var(--white);
-    border-color: var(--primary);
 }
 
-/* .btn.btn-white {
-    color: #0F1A3F;
-    background: var(--primary-800);
-    border-color: var(--primary-800);
-} */
+.btn.btn-outline-secondary:is(:hover, :focus, :active),
+.btn.btn-secondary {
+    color: var(--white);
+    background: var(--primary);
+}
 
-/* .btn.btn-small {
-    font-size: 16px;
-    line-height: 26px;
-    padding: 10px 24px 10px 24px;
-    font-weight: 400;
-} */
+.btn.btn-secondary:is(:hover, :focus, :active),
+.btn.btn-outline-secondary {
+    color: var(--primary);
+    border-color: var(--primary);
+    background: var(--white);
+}
 
-/* .btn:hover,
-.btn:focus,
-.btn:focus-visible {
-    background: #1B2F4D;
-    color: #fff;
-} */
+.btn.btn-outline-white:is(:hover, :focus, :active),
+.btn.btn-white {
+    color: var(--primary-light);
+    background: var(--white);
+}
 
-/* .btn-check:checked+.btn,
-.btn.active,
-.btn.show,
-.btn:first-child:active,
-:not(.btn-check)+.btn:active {
-    background: #1B2F4D;
-    color: #fff;
-} */
-
-/* .btn-link {
-    color: #0F1A3F;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 27px;
-    text-decoration: underline;
-    text-transform: capitalize;
-    transition: all 0.3s ease-in-out;
-} */
-
-/* .btn-link:hover,
-.btn-link:focus {
-    color: #1B2F4D;
-    text-decoration: underline;
-} */
+.btn.btn-white:is(:hover, :focus, :active),
+.btn.btn-outline-white {
+    color: var(--white);
+    border-color: var(--white);
+    background: transparent;
+}
 
 /*==============================================================
 	Common Css 
 ==============================================================*/
 
-.h1 {
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 56px;
-    line-height: 1.3;
-    color: #0F1A3F;
-    margin: 0;
-    font-weight: 800;
-}
-
-.h2 {
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 48px;
-    line-height: 1.3;
-    color: #0F1A3F;
-    margin: 0;
-    font-weight: 700;
-}
-
-.h3 {
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 40px;
-    line-height: 1.3;
-    color: #0F1A3F;
-    margin: 0;
-    font-weight: 600;
-}
-
-.h4 {
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 36px;
-    line-height: 1.3;
-    color: #0F1A3F;
-    margin: 0;
-    font-weight: 500;
-}
-
-.h5 {
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 24px;
-    line-height: 1.3;
-    color: #0F1A3F;
-    margin: 0;
-    font-weight: 500;
-}
-
-.h6 {
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 20px;
-    line-height: 1.2;
-    color: #0F1A3F;
-    margin: 0;
-    font-weight: 500;
-}
-
-p:last-child {
-    margin: 0;
-}
-
-p {
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: 400;
-}
-
-/* ===== header ===== */
-.header-wrap {
-    position: relative;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-.header-wrap header .header-top {
-    padding: 10px 0;
-    background: var(--primary-100);
-}
-
-.header-wrap header .header-top p {
-    font-size: 22px;
-    line-height: 1.364;
-    color: var(--white);
-    font-family: var(--font-title);
-    text-align: center;
-}
-
-.header-wrap header .header-bottom {
-    display: flex;
-}
-
-.header-wrap header .header-bottom .head-logo {
-    width: auto;
-    flex-shrink: 0;
-}
-
-.header-wrap header .header-bottom .head-logo a {
-    display: inline-block;
-}
-
-.header-wrap header .header-bottom .head-logo a img {
-    max-width: 265px;
-    transition: all 0.3s ease-in-out;
-}
-
-.header-wrap header .header-bottom .header-menu {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 35px 62px;
-}
-
-header .menu ul {
-    display: flex;
-    align-items: center;
-}
-
-header .menu ul li a {
-    font-family: var(--font-primary);
-    display: inline-block;
-    font-size: 18px;
-    line-height: 1;
-    padding: 10px 28px;
-    border-radius: 100px;
-    color: var(--black);
-    border: 1px solid transparent;
-    transition: all 0.3s ease-in-out;
-}
-
-header .menu ul li a:hover {
-    border-color: var(--primary-900);
-    color: var(--primary-900);
-}
-
-header .menu ul li.active a {
-    font-weight: 700;
-    border-color: var(--primary-900);
-}
-
-header .head-contact {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header .head-contact ul {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -24px;
-    padding-right: 24px;
-}
-
-header .head-contact ul li {
-    padding: 0 24px;
-    position: relative;
-}
-
-header .head-contact ul li a {
-    font-size: 18px;
-    line-height: 1;
-    font-weight: 700;
-    color: var(--primary-900);
-    transition: all 0.3s ease-in-out;
-}
-
-header .head-contact ul li a:hover {
-    color: var(--primary-100);
-}
-
-header .head-contact ul li:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    height: 18px;
-    width: 2px;
-    margin: auto 0;
-    background: var(--primary-100);
-}
-
-@media(max-width:1740px) {
-    .header-wrap header .header-bottom .header-menu {
-        padding: 10px;
-    }
-
-    .header-wrap header .header-bottom .head-logo a img {
-        max-width: 200px;
-    }
-
-    header .menu ul li a {
-        font-size: 16px;
-        padding: 10px 15px;
-    }
-
-    header .head-contact ul {
-        margin: 0 -12px;
-        padding-right: 20px;
-    }
-
-    header .head-contact ul li {
-        padding: 0 12px;
-    }
-
-    header .head-contact ul li a {
-        font-size: 16px;
-    }
 
 
-    /* .header-wrap header .header-bottom .header-menu {
-        padding: 35px 10px;
-    } */
-}
 
 /* ===== header ===== */

@@ -1,51 +1,67 @@
 <!-- header start -->
 <div class="header-wrap">
-    <header>
-        <div class="header-top">
-            <div class="container">
-                <p>Dates filling fast for '24 and '25, bundle services to save big $$$</p>
-            </div>
+  <header>
+    <div class="head-top">
+      <div class="container"></div>
+    </div>
+    <div class="head-bottom">
+      <div class="container">
+        <div class="contact-info">
+          <ul>
+            <li>
+              <a href="#">
+                <div class="icon-box">
+                  <svg class="icon" width="14" height="19">
+                    <use xlink:href="assets/images/svgsprit.svg#location-icon"></use>
+                  </svg>
+                </div> 1716 South Broadway, St. Louis, MO 63104
+              </a>
+            </li>
+            <li>
+              <a href="tel:3144058420">
+                <div class="icon-box">
+                  <svg class="icon" width="18" height="19">
+                    <use xlink:href="assets/images/svgsprit.svg#phone-icon"></use>
+                  </svg>
+                </div> (314) 405-8420
+              </a>
+            </li>
+            <li></li>
+            <a href="mailto:info@GratefulPetsSTL.com">
+              <div class="icon-box">
+                <svg class="icon" width="18" height="14">
+                  <use xlink:href="assets/images/svgsprit.svg#mail-icon"></use>
+                </svg>
+              </div> info@GratefulPetsSTL.com
+            </a>
+            </li>
+          </ul>
         </div>
-        <div class="header-bottom">
-            <div class="head-logo">
-                <a href="#">
-                    <img src="assets/images/logo.png" alt="header logo" width="265" height="142">
-                </a>
-            </div>
-            <div class="header-menu">
-                <div class="menu">
-                    <ul>
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-                        <li>
-                            <a href="#">Services</a>
-                        </li>
-                        <li>
-                            <a href="#">FAQs</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                        <li>
-                            <a href="#">Blog</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="head-contact">
-                    <ul>
-                        <li><a href="mailto:info@lightitupevents.com">info@lightitupevents.com</a></li>
-                        <li><a href="tel:info@321-438-6314">321-438-6314</a></li>
-                    </ul>
-                    <div class="btn-wrap">
-                        <a href="#" class="btn">Call to Action</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+        <ul class="social">
+          <li>
+            <a href="#">
+              <svg class="icon" width="18" height="19">
+                <use xlink:href="assets/images/svgsprit.svg#facebook-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="icon" width="16" height="16">
+                <use xlink:href="assets/images/svgsprit.svg#x-twitter-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="icon" width="16" height="16">
+                <use xlink:href="assets/images/svgsprit.svg#instagram-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
 </div>
 <!-- header end -->
