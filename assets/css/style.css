@@ -28,10 +28,11 @@
     --grey-900: #050505;
     --grey-800: #151515;
     --grey-700: #1b1b1b;
-    --grey-600: #a4a3a3;
-    --grey-500: #b1b1b1;
-    --grey-400: #dfd1d3;
-    --grey-300: #f7f7f9;
+    --grey-600: #5c5c5c;
+    --grey-500: #a4a3a3;
+    --grey-400: #b1b1b1;
+    --grey-300: #dfd1d3;
+    --grey-200: #f7f7f9;
 
     --font-primary: 'Poppins', sans-serif;
 
@@ -447,7 +448,342 @@ input:-ms-input-placeholder {
 	Common Css 
 ==============================================================*/
 
+.contact-info ul {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.contact-info ul li {
+    display: inline-flex;
+}
 
+.contact-info ul li a {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 18px;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 600;
+    color: var(--white);
+    transition: var(--transition);
+}
+
+.contact-info ul li a span {
+    display: inline-flex;
+}
+
+.contact-info ul li a .icon-box {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    color: var(--white);
+    background: var(--grey-600);
+    transition: var(--transition);
+}
+
+.contact-info ul li a:hover {
+    color: var(--primary);
+}
+
+.contact-info ul li a:hover .icon-box {
+    color: var(--white);
+    background: var(--primary);
+}
+
+ul.social {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+ul.social li {
+    display: inline-flex;
+}
+
+ul.social li a {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--white);
+    border-radius: 100px;
+    color: var(--white);
+    background: transparent;
+    transition: var(--transition);
+}
+
+ul.social li a:hover {
+    border-color: var(--primary);
+    background: var(--primary);
+}
 
 /* ===== header ===== */
+.header-wrap .head-top {
+    padding: 20px 0;
+    background: var(--grey-800);
+}
+
+.header-wrap .head-top .contact-info {
+    width: 100%;
+    padding-right: 50px;
+}
+
+.header-wrap .head-top .contact-info ul {
+    column-gap: clamp(20px, 2.604vw, 50px);
+}
+
+.header-wrap .head-top .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    display: inline-flex;
+}
+
+.header-wrap .logo a {
+    display: inline-flex;
+}
+
+header .logo a img {
+    max-width: 256px;
+    height: auto;
+    transition: var(--transition);
+}
+
+header .menu-toggle button {
+    background: transparent;
+    border: 0;
+}
+
+header .head-bottom {
+    padding: 36px 0;
+    display: flex;
+    position: relative;
+}
+
+header .head-bottom>div {
+    display: flex;
+}
+
+header .menu ul {
+    display: flex;
+    align-items: center;
+    column-gap: clamp(40px, 4.688vw, 90px);
+}
+
+header .menu ul li a {
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 400;
+    transition: var(--transition);
+}
+
+.mobile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--black);
+    opacity: 0.8;
+    transition: var(--transition);
+}
+
+.mobile-overlay:not(.active) {
+    opacity: 0;
+    visibility: hidden;
+}
+
+@media(min-width:1025px) {
+    header .logo {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        max-width: 256px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header .menu ul li:nth-child(4) {
+        margin-right: auto;
+    }
+
+    header .header-menu {
+        width: 100%;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+}
+
+@media(min-width:1281px) {
+    .header-wrap .head-top .contact-info ul li:first-child {
+        margin-right: auto;
+    }
+}
+
+@media(max-width:1280px) {
+    .contact-info ul li a span {
+        display: none;
+    }
+
+    header .menu ul {
+        column-gap: 25px;
+    }
+}
+
+@media(max-width:1024px) {
+    header .head-bottom {
+        padding: 20px 0;
+    }
+
+    header .head-bottom>div {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header .logo a img {
+        max-width: 180px;
+    }
+
+    header .header-menu {
+        position: fixed;
+        top: 0;
+        right: -320px;
+        width: 320px;
+        height: 100%;
+        padding: 60px 15px 20px;
+        background: var(--white);
+        transition: var(--transition);
+        z-index: 99;
+    }
+
+    header .header-menu.active {
+        right: 0px;
+    }
+
+    header .header-menu .menu-toggle {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        background: var(--white);
+        padding: 15px 15px 14px;
+        display: flex;
+    }
+
+    header .header-menu .menu-toggle button {
+        display: inline-flex;
+    }
+
+    header .menu {
+        height: 100%;
+        overflow: auto;
+    }
+
+    header .menu ul {
+        flex-direction: column;
+        column-gap: 0;
+        align-items: flex-start;
+    }
+
+    header .menu ul li {
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    header .menu ul li:has(.btn) {
+        padding-top: 25px;
+    }
+
+    header .menu ul li a {
+        display: block;
+        font-size: 16px;
+        width: 100%;
+        padding: 14px 0;
+    }
+}
+
+@media(max-width:767px) {
+    .header-wrap .head-top {
+        padding: 8px 0;
+    }
+
+    .header-wrap .head-top .contact-info {
+        padding-right: 15px;
+    }
+
+    .header-wrap .head-top .contact-info ul {
+        column-gap: 10px;
+    }
+
+    header ul.social {
+        column-gap: 10px;
+    }
+
+    header ul.social li a {
+        width: 32px;
+        height: 32px;
+    }
+
+    header ul.social li a .icon {
+        width: 50%;
+    }
+
+    header .contact-info ul li a .icon-box {
+        width: 32px;
+        height: 32px;
+    }
+
+    header .contact-info ul li a .icon-box .icon {
+        width: 50%;
+    }
+}
+
+/* ===== header ===== */
+
+/* ===== banner ===== */
+.banner {
+    background: var(--secondary) url("../images/hero-bg.webp") no-repeat center / cover;
+}
+
+.banner .column-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 -15px;
+}
+
+.banner .column-wrap>div {
+    width: 50%;
+    padding: 0 15px;
+}
+
+.banner .banner-title {
+    line-height: 1.2;
+    font-weight: 700;
+    color: var(--white);
+    padding-bottom: 30px;
+}
+
+.banner p {
+    color: var(--white);
+}
+
+.banner .btn-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: clamp(20px, 3.125vw, 60px);
+}
+
+/* ===== banner ===== */
