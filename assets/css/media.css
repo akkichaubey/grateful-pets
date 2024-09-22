@@ -1,0 +1,233 @@
+/*===== 768 =====*/
+@media(min-width:768px) {
+    .home-about .video-wrap {
+        padding-right: clamp(10px, 3.385vw, 65px);
+    }
+
+    .home-about .content-box {
+        padding-left: clamp(10px, 3.125vw, 60px);
+    }
+}
+
+/*===== 768 =====*/
+
+/*===== 992 =====*/
+@media(min-width:992px) {
+
+    .home-gallery .gallery .grid .grid-sizer,
+    .home-gallery .gallery .grid .grid-item {
+        width: 25%;
+    }
+}
+
+/*===== 992 =====*/
+/*===== 1025 =====*/
+@media(min-width:1025px) {}
+
+/*===== 1025 =====*/
+/*===== 1281 =====*/
+@media(min-width:1281px) {}
+
+/*===== 1281 =====*/
+
+
+
+/*===== 1280 =====*/
+@media(max-width:1680px) {
+    .home-testimonial .slider-wrap {
+        padding-bottom: 50px;
+    }
+
+    .home-testimonial .slider-wrap .swiper-arrow {
+        top: auto;
+    }
+
+    .home-testimonial .slider-wrap .swiper-arrow.prev {
+        left: calc(50% - 50px);
+    }
+
+    .home-testimonial .slider-wrap .swiper-arrow.next {
+        right: calc(50% - 50px);
+    }
+}
+
+@media(max-width:1280px) {
+    .contact-info ul li a {
+        font-size: 16px;
+    }
+
+    .banner .column-wrap .col-left {
+        padding: 90px 30px 163px 0;
+    }
+
+    .banner .column-wrap .col-right {
+        padding-top: 40px;
+    }
+
+    .home-choose-us .choose-us-list ul li {
+        width: 50%;
+    }
+
+    .home-service .service-list ul {
+        margin: 0 -15px;
+    }
+
+    .home-service .service-list ul li {
+        padding: 0 15px;
+    }
+
+    .service-box .info {
+        padding: 30px;
+    }
+
+    .home-team .team-list>ul {
+        margin: 0 -15px;
+        row-gap: 30px;
+    }
+
+    .home-team .team-list>ul>li {
+        padding: 0 15px;
+    }
+
+    .home-blog .blog-list>ul {
+        margin: 0 -15px;
+    }
+
+    .home-blog .blog-list>ul>li {
+        padding: 0 15px;
+    }
+
+    footer .contact-info ul li a span {
+        display: inline-block;
+    }
+}
+
+/*===== 1280 =====*/
+/*===== 1024 =====*/
+@media(max-width:1024px) {}
+
+/*===== 1024 =====*/
+
+/*===== 991 =====*/
+@media(max-width:991px) {
+    .banner .banner-info {
+        max-width: 500px;
+    }
+
+    .banner .column-wrap .col-left {
+        padding: 70px 30px 130px 0;
+    }
+
+    .home-choose-us .btn-wrap {
+        text-align: center;
+    }
+
+    .home-choose-us .title-wap {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .home-service .service-list ul li {
+        width: 50%;
+    }
+
+    .home-team .team-list>ul>li {
+        width: 50%;
+    }
+
+    .newsletter-wrap .newsletter-box .img-box {
+        padding-top: 0;
+    }
+
+    .newsletter-wrap .newsletter {
+        max-width: 100%;
+    }
+}
+
+/*===== 991 =====*/
+/*===== 767 =====*/
+@media(max-width:767px) {
+    .banner .column-wrap {
+        flex-wrap: wrap;
+    }
+
+    .banner .hero-bottom {
+        display: none;
+    }
+
+    .banner .column-wrap :is(.col-left, .col-right) {
+        width: 100%;
+    }
+
+    .banner .column-wrap .col-left {
+        padding: 70px 0px 0px 0;
+    }
+
+    .banner .banner-info {
+        max-width: 100%;
+    }
+
+    .banner .banner-img {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .banner .banner-img img {
+        max-width: 340px;
+    }
+
+    .home-choose-us .choose-us-list ul li {
+        width: 100%;
+    }
+
+    .home-team .team-list>ul>li {
+        width: 50%;
+    }
+
+    .home-faq .accordion .accordion-item .accordion-body {
+        padding: 5px 20px 25px 20px;
+    }
+
+    .home-faq .btn-wrap {
+        text-align: center;
+    }
+
+    .home-blog .blog-list>ul>li {
+        width: 100%;
+    }
+
+    .newsletter-wrap .newsletter .input-box .form-control {
+        height: 46px;
+        font-size: 16px;
+        padding: 5px 15px;
+    }
+
+    footer .footer-bottom .copyrights {
+        flex-direction: column;
+        row-gap: 8px;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .gallery .grid {
+        margin: 0 -10px;
+    }
+
+    .gallery .grid-sizer,
+    .gallery .grid-item {
+        padding: 0 10px;
+        margin-bottom: 20px;
+        width: 50%;
+    }
+}
+
+@media(max-width:680px) {
+
+    .home-team .team-list>ul>li,
+    .home-service .service-list ul li {
+        width: 100%;
+    }
+}
+
+/*===== 767 =====*/
