@@ -22,6 +22,17 @@ jQuery(document).ready(function () {
     }
   });
 
+  jQuery(".menu-arrow").on("click", function () {
+    jQuery(this).addClass("active");
+    jQuery(this).next(".sub-menu").slideDown();
+    jQuery(this)
+      .parent()
+      .siblings("li")
+      .find(".menu-arrow")
+      .removeClass("active");
+    jQuery(this).parent().siblings("li").find(".sub-menu").slideUp();
+  });
+
   // SVG Create
   jQuery("img.svg").each(function () {
     var $img = jQuery(this);

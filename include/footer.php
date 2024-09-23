@@ -80,6 +80,9 @@
             </div>
           </div>
         </div>
+        <div class="footer-img">
+          <img src="assets/images/footer-img.webp" alt="footer img" width="200" height="auto">
+        </div>
       </div>
       <div class="footer-bottom">
         <div class="copyrights text-xs">
