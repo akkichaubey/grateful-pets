@@ -33,7 +33,7 @@
                 </div>
                 <div class="col-right">
                     <div class="banner-img" data-gsap="fadeUp" data-delay="0.2">
-                        <img src="./assets/images/photo-no-background.webp" alt="img" width="830" height="849">
+                        <img src="./assets/images/banner-dog.webp" alt="img" width="830" height="849">
                     </div>
                 </div>
             </div>

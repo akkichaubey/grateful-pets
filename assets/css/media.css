@@ -100,6 +100,14 @@
     footer .contact-info ul li a span {
         display: inline-block;
     }
+
+    .related-blog .blog-list>ul {
+        margin: 0 -15px;
+    }
+
+    .related-blog .blog-list>ul>li {
+        padding: 0 15px;
+    }
 }
 
 /*===== 1280 =====*/
@@ -141,6 +149,18 @@
 
     .newsletter-wrap .newsletter {
         max-width: 100%;
+    }
+
+    .testimonial-wrap .testimonial-list>ul>li {
+        width: 50%;
+    }
+
+    .blog-box .blog-info {
+        padding: 25px 20px;
+    }
+
+    .related-blog .blog-list>ul>li {
+        width: 50%;
     }
 }
 
@@ -220,12 +240,34 @@
         margin-bottom: 20px;
         width: 50%;
     }
+
+    .testimonial-wrap .title-wrap h2 {
+        padding: 0 50px;
+    }
+
+    .testimonial-box.stl-1 {
+        padding: 25px 20px;
+    }
+
+    .testimonial-wrap .title-wrap h2::after,
+    .testimonial-wrap .title-wrap h2::before {
+        width: 38px;
+        height: 30px;
+    }
+
+    .related-blog .blog-list>ul>li {
+        width: 100%;
+    }
 }
 
 @media(max-width:680px) {
 
     .home-team .team-list>ul>li,
     .home-service .service-list ul li {
+        width: 100%;
+    }
+
+    .testimonial-wrap .testimonial-list>ul>li {
         width: 100%;
     }
 }
