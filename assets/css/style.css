@@ -1092,6 +1092,55 @@ header .menu>ul>li>.menu-arrow .icon {
     padding-top: clamp(20px, 3.125vw, 60px);
 }
 
+.banner .search-box {
+    max-width: 510px;
+    padding-top: clamp(15px, 2.604vw, 50px);
+}
+
+.banner .search-box .input-box {
+    display: flex;
+    column-gap: 10px;
+}
+
+.banner .search-box .input-box input[type="text"] {
+    width: 100%;
+    font-size: 18px;
+    line-height: 1;
+    color: var(--white);
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid var(--white);
+    padding: 5px 20px;
+    background: transparent;
+}
+
+.banner .search-box .input-box input[type="text"] {
+    height: 50px;
+    padding: 5px 20px;
+    flex-shrink: 0;
+}
+
+
+.banner .search-box .input-box input[type="text"]::-webkit-input-placeholder {
+    opacity: 1;
+    color: var(--white);
+}
+
+.banner .search-box .input-box input[type="text"]:-moz-placeholder {
+    opacity: 1;
+    color: var(--white);
+}
+
+.banner .search-box .input-box input[type="text"]::-moz-placeholder {
+    opacity: 1;
+    color: var(--white);
+}
+
+.banner .search-box .input-box input[type="text"]:-ms-input-placeholder {
+    opacity: 1;
+    color: var(--white);
+}
+
 /* ===== banner ===== */
 
 /* ===== home-about ===== */
@@ -2218,6 +2267,20 @@ footer .footer-menu li a {
 .related-blog .blog-list>ul>li {
     width: 33.333%;
     padding: 0 33px;
+}
+
+.popular-blog h2 {
+    padding-bottom: clamp(15px, 2.604vw, 50px);
+}
+
+.popular-blog ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+}
+
+.popular-blog .blog-box:not(.small) .blog-img {
+    padding-bottom: 41%;
 }
 
 /* ===== blog and blog single ===== */

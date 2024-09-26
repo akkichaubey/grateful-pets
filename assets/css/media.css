@@ -1,4 +1,31 @@
 /*===== 768 =====*/
+@media(min-width:481px) {
+    .blog-box.small {
+        display: flex;
+    }
+
+    .blog-box.small .blog-img {
+        display: flex;
+        width: 175px;
+        flex-shrink: 0;
+        padding-bottom: 0;
+    }
+
+    .blog-box.small .blog-info {
+        width: 100%;
+        border-radius: 0 20px 20px 0px;
+        border: 1px solid var(--primary);
+        border-left: 0;
+    }
+
+    .blog-box.small .blog-info p {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+
 @media(min-width:768px) {
     .home-about .video-wrap {
         padding-right: clamp(10px, 3.385vw, 65px);
@@ -270,6 +297,19 @@
     .testimonial-wrap .testimonial-list>ul>li {
         width: 100%;
     }
+}
+
+@media(max-width:480px) {
+    .blog-box.small {
+        flex-direction: column;
+    }
+
+    .blog-box.small .blog-img {
+        width: 100%;
+        padding-bottom: 40%;
+    }
+
+    .blog-box.small .blog-info {}
 }
 
 /*===== 767 =====*/

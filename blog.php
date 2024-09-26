@@ -16,10 +16,16 @@
             <div class="column-wrap">
                 <div class="col-left">
                     <div class="banner-info text-md">
-                        <h1 class="h1 banner-title" data-gsap="fadeUp">Testimonials</h1>
+                        <h1 class="h1 banner-title" data-gsap="fadeUp">Blog</h1>
                         <div class="text-wrap" data-gsap="fadeUp" data-delay="0.2">
                             <p>Netus eleifend consequat fermentum dapibus tempor. Placerat class varius nam risus
                                 finibus. Ex penatibus condimentum nullam nostra phasellus nisi pulvinar.</p>
+                        </div>
+                        <div class="search-box">
+                            <div class="input-box" data-gsap="fadeUp">
+                                <input type="text" placeholder="Search articles">
+                                <input type="submit" value="Call to action" class="btn btn-secondary">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -34,364 +40,200 @@
     <!-- hero banner end -->
 
     <!-- gallery-wrap start -->
-    <div class="testimonial-wrap pt-120 pb-120">
+    <div class="blog-wrap pt-120 pb-120">
         <div class="container">
-            <div class="title-wrap text-center text-sm">
-                <h2 class="h2" data-gsap="fadeUp">What Our Clients Says</h2>
-                <div class="sub-text" data-gsap="fadeUp">
-                    <p>Take a peek inside our facility and see the happy faces of our furry clients. <br>Our gallery
-                        showcases the spacious, clean, and fun environment we’ve created for your pets.</p>
+            <div class="popular-blog">
+                <h2 class="h2">Popular blog</h2>
+                <div class="row row-gap-30">
+                    <div class="col-md-7">
+                        <div class="blog-box" data-gsap="fadeUp">
+                            <a class="blog-img img-cover">
+                                <img src="./assets/images/blog-3.webp" alt="img">
+                            </a>
+                            <div class="blog-info">
+                                <div class="date">January 12, 2024</div>
+                                <h3 class="h5"><a href="#">Lorem Ipsum Odor Amet</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel volutpat magna.
+                                    Proin a dapibus nisi. Pellentesque habitant morbi tristique senectus et netus et
+                                    malesuada fames ac turpis</p>
+                                <div class="link-wrap">
+                                    <a href="#">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <ul>
+                            <li>
+                                <div class="blog-box small" data-gsap="fadeUp">
+                                    <a class="blog-img img-cover">
+                                        <img src="./assets/images/blog-10.webp" alt="img">
+                                    </a>
+                                    <div class="blog-info">
+                                        <div class="date">January 12, 2024</div>
+                                        <h3 class="h5"><a href="#">Lorem Ipsum Odor Amet</a></h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel volutpat
+                                            magna.
+                                            Proin a dapibus nisi. Pellentesque habitant morbi tristique senectus et
+                                            netus et
+                                            malesuada fames ac turpis</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="blog-box small" data-gsap="fadeUp">
+                                    <a class="blog-img img-cover">
+                                        <img src="./assets/images/blog-10.webp" alt="img">
+                                    </a>
+                                    <div class="blog-info">
+                                        <div class="date">January 12, 2024</div>
+                                        <h3 class="h5"><a href="#">Lorem Ipsum Odor Amet</a></h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel volutpat
+                                            magna.
+                                            Proin a dapibus nisi. Pellentesque habitant morbi tristique senectus et
+                                            netus et
+                                            malesuada fames ac turpis</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="blog-box small" data-gsap="fadeUp">
+                                    <a class="blog-img img-cover">
+                                        <img src="./assets/images/blog-10.webp" alt="img">
+                                    </a>
+                                    <div class="blog-info">
+                                        <div class="date">January 12, 2024</div>
+                                        <h3 class="h5"><a href="#">Lorem Ipsum Odor Amet</a></h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel volutpat
+                                            magna.
+                                            Proin a dapibus nisi. Pellentesque habitant morbi tristique senectus et
+                                            netus et
+                                            malesuada fames ac turpis</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="testimonial-list">
+        </div>
+    </div>
+    <!-- gallery-wrap end -->
+    <!-- related-blog start -->
+    <div class="related-blog pb-180">
+        <div class="container">
+            <div class="title-wrap">
+                <h2 class="h2" data-gsap="fadeUp">Related blog</h2>
+            </div>
+            <div class="blog-list">
                 <ul>
                     <li>
-                        <div class="testimonial-box stl-1" data-gsap="fadeUp">
-                            <div class="name-rating">
-                                <div>
-                                    <span class="name">John Doe</span>
-                                    <span class="designation">Company</span>
-                                </div>
-                                <div class="rating">
-                                    <ul>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                    </ul>
+                        <div class="blog-box" data-gsap="fadeUp">
+                            <a class="blog-img img-cover">
+                                <img src="./assets/images/blog-3.webp" alt="img">
+                            </a>
+                            <div class="blog-info">
+                                <div class="date">January 12, 2024</div>
+                                <h3 class="h5"><a href="#">Lorem Ipsum Odor Amet</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel volutpat magna.
+                                    Proin a dapibus nisi. Pellentesque habitant morbi tristique senectus et netus et
+                                    malesuada fames ac turpis</p>
+                                <div class="link-wrap">
+                                    <a href="#">Read more</a>
                                 </div>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel volutpat magna. Proin
-                                a dapibus nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada
-                                fames ac turpis egestas. Vivamus feugiat, sapien a congue pulvinar, libero mi viverra
-                                lorem, at efficitur urna odio at urna.</p>
                         </div>
                     </li>
                     <li>
-                        <div class="testimonial-box stl-1" data-gsap="fadeUp">
-                            <div class="name-rating">
-                                <div>
-                                    <span class="name">John Doe</span>
-                                    <span class="designation">Company</span>
-                                </div>
-                                <div class="rating">
-                                    <ul>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                    </ul>
+                        <div class="blog-box" data-gsap="fadeUp">
+                            <a class="blog-img img-cover">
+                                <img src="./assets/images/blog-3.webp" alt="img">
+                            </a>
+                            <div class="blog-info">
+                                <div class="date">January 12, 2024</div>
+                                <h3 class="h5"><a href="#">Lorem Ipsum Odor Amet</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel volutpat magna.
+                                    Proin a dapibus nisi. Pellentesque habitant morbi tristique senectus et netus et
+                                    malesuada fames ac turpis</p>
+                                <div class="link-wrap">
+                                    <a href="#">Read more</a>
                                 </div>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel volutpat magna. Proin
-                                a dapibus nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada
-                                fames ac turpis egestas. Vivamus feugiat, sapien a congue pulvinar, libero mi viverra
-                                lorem, at efficitur urna odio at urna.</p>
                         </div>
                     </li>
                     <li>
-                        <div class="testimonial-box stl-1" data-gsap="fadeUp">
-                            <div class="name-rating">
-                                <div>
-                                    <span class="name">John Doe</span>
-                                    <span class="designation">Company</span>
-                                </div>
-                                <div class="rating">
-                                    <ul>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                    </ul>
+                        <div class="blog-box" data-gsap="fadeUp">
+                            <a class="blog-img img-cover">
+                                <img src="./assets/images/blog-3.webp" alt="img">
+                            </a>
+                            <div class="blog-info">
+                                <div class="date">January 12, 2024</div>
+                                <h3 class="h5"><a href="#">Lorem Ipsum Odor Amet</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel volutpat magna.
+                                    Proin a dapibus nisi. Pellentesque habitant morbi tristique senectus et netus et
+                                    malesuada fames ac turpis</p>
+                                <div class="link-wrap">
+                                    <a href="#">Read more</a>
                                 </div>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel volutpat magna. Proin
-                                a dapibus nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada
-                                fames ac turpis egestas. Vivamus feugiat, sapien a congue pulvinar, libero mi viverra
-                                lorem, at efficitur urna odio at urna.</p>
                         </div>
                     </li>
                     <li>
-                        <div class="testimonial-box stl-1" data-gsap="fadeUp">
-                            <div class="name-rating">
-                                <div>
-                                    <span class="name">John Doe</span>
-                                    <span class="designation">Company</span>
-                                </div>
-                                <div class="rating">
-                                    <ul>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                    </ul>
+                        <div class="blog-box" data-gsap="fadeUp">
+                            <a class="blog-img img-cover">
+                                <img src="./assets/images/blog-3.webp" alt="img">
+                            </a>
+                            <div class="blog-info">
+                                <div class="date">January 12, 2024</div>
+                                <h3 class="h5"><a href="#">Lorem Ipsum Odor Amet</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel volutpat magna.
+                                    Proin a dapibus nisi. Pellentesque habitant morbi tristique senectus et netus et
+                                    malesuada fames ac turpis</p>
+                                <div class="link-wrap">
+                                    <a href="#">Read more</a>
                                 </div>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel volutpat magna. Proin
-                                a dapibus nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada
-                                fames ac turpis egestas. Vivamus feugiat, sapien a congue pulvinar, libero mi viverra
-                                lorem, at efficitur urna odio at urna.</p>
                         </div>
                     </li>
                     <li>
-                        <div class="testimonial-box stl-1" data-gsap="fadeUp">
-                            <div class="name-rating">
-                                <div>
-                                    <span class="name">John Doe</span>
-                                    <span class="designation">Company</span>
-                                </div>
-                                <div class="rating">
-                                    <ul>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                    </ul>
+                        <div class="blog-box" data-gsap="fadeUp">
+                            <a class="blog-img img-cover">
+                                <img src="./assets/images/blog-3.webp" alt="img">
+                            </a>
+                            <div class="blog-info">
+                                <div class="date">January 12, 2024</div>
+                                <h3 class="h5"><a href="#">Lorem Ipsum Odor Amet</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel volutpat magna.
+                                    Proin a dapibus nisi. Pellentesque habitant morbi tristique senectus et netus et
+                                    malesuada fames ac turpis</p>
+                                <div class="link-wrap">
+                                    <a href="#">Read more</a>
                                 </div>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel volutpat magna. Proin
-                                a dapibus nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada
-                                fames ac turpis egestas. Vivamus feugiat, sapien a congue pulvinar, libero mi viverra
-                                lorem, at efficitur urna odio at urna.</p>
                         </div>
                     </li>
                     <li>
-                        <div class="testimonial-box stl-1" data-gsap="fadeUp">
-                            <div class="name-rating">
-                                <div>
-                                    <span class="name">John Doe</span>
-                                    <span class="designation">Company</span>
-                                </div>
-                                <div class="rating">
-                                    <ul>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                    </ul>
+                        <div class="blog-box" data-gsap="fadeUp">
+                            <a class="blog-img img-cover">
+                                <img src="./assets/images/blog-3.webp" alt="img">
+                            </a>
+                            <div class="blog-info">
+                                <div class="date">January 12, 2024</div>
+                                <h3 class="h5"><a href="#">Lorem Ipsum Odor Amet</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel volutpat magna.
+                                    Proin a dapibus nisi. Pellentesque habitant morbi tristique senectus et netus et
+                                    malesuada fames ac turpis</p>
+                                <div class="link-wrap">
+                                    <a href="#">Read more</a>
                                 </div>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel volutpat magna. Proin
-                                a dapibus nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada
-                                fames ac turpis egestas. Vivamus feugiat, sapien a congue pulvinar, libero mi viverra
-                                lorem, at efficitur urna odio at urna.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="testimonial-box stl-1" data-gsap="fadeUp">
-                            <div class="name-rating">
-                                <div>
-                                    <span class="name">John Doe</span>
-                                    <span class="designation">Company</span>
-                                </div>
-                                <div class="rating">
-                                    <ul>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel volutpat magna. Proin
-                                a dapibus nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada
-                                fames ac turpis egestas. Vivamus feugiat, sapien a congue pulvinar, libero mi viverra
-                                lorem, at efficitur urna odio at urna.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="testimonial-box stl-1" data-gsap="fadeUp">
-                            <div class="name-rating">
-                                <div>
-                                    <span class="name">John Doe</span>
-                                    <span class="designation">Company</span>
-                                </div>
-                                <div class="rating">
-                                    <ul>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel volutpat magna. Proin
-                                a dapibus nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada
-                                fames ac turpis egestas. Vivamus feugiat, sapien a congue pulvinar, libero mi viverra
-                                lorem, at efficitur urna odio at urna.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="testimonial-box stl-1" data-gsap="fadeUp">
-                            <div class="name-rating">
-                                <div>
-                                    <span class="name">John Doe</span>
-                                    <span class="designation">Company</span>
-                                </div>
-                                <div class="rating">
-                                    <ul>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/icons/star-icon.png" alt="star icon" width="19"
-                                                height="18">
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel volutpat magna. Proin
-                                a dapibus nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada
-                                fames ac turpis egestas. Vivamus feugiat, sapien a congue pulvinar, libero mi viverra
-                                lorem, at efficitur urna odio at urna.</p>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-    <!-- gallery-wrap end -->
+    <!-- related-blog end -->
 
     <!-- newsletter-wrap start -->
     <div class="newsletter-wrap pb-180">
