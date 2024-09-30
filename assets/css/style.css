@@ -867,12 +867,15 @@ header .menu>ul>li>.menu-arrow .icon {
         transition: var(--transition);
         z-index: 1;
         display: block !important;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(20px);
     }
 
-    header .menu>ul>li:not(:hover)>.sub-menu {
-        opacity: 0;
+    header .menu>ul>li:hover>.sub-menu {
+        opacity: 1;
         visibility: visible;
-        transform: translateY(20px);
+        transform: translateY(0);
     }
 
     header .menu>ul>li:hover>.menu-arrow .icon {
