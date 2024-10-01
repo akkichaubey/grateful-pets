@@ -57,6 +57,8 @@
     --btn-text: clamp(16px, 0.938vw, 18px);
 
     --transition: all 0.3s ease-in-out;
+
+    --brd-20: clamp(16px, 1.042vw, 20px);
 }
 
 /* CSS Document */
@@ -653,7 +655,7 @@ ul.social li a:hover {
     position: relative;
     padding-bottom: 60.723%;
     border-radius: clamp(16px, 1.042vw, 20px);
-    border: 2px solid var(--primary-light);
+    /* border: 2px solid var(--primary-light); */
 }
 
 .video-box::after {
@@ -1147,6 +1149,17 @@ header .menu>ul>li>.menu-arrow .icon {
 /* ===== banner ===== */
 
 /* ===== home-about ===== */
+
+.home-about {
+    display: flex;
+    flex-direction: column;
+    row-gap: clamp(35px, 4.479vw, 86px);
+}
+
+.home-about .inner-section {
+    display: flex;
+    flex-direction: column;
+}
 
 .home-about .content-box .title-wrap {
     padding-bottom: clamp(15px, 1.979vw, 38px);
@@ -2287,3 +2300,68 @@ footer .footer-menu li a {
 }
 
 /* ===== blog and blog single ===== */
+
+/* ===== about ===== */
+.value-box {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    height: 100%;
+    border-radius: 15px;
+    background: var(--grey-200);
+    padding: clamp(25px, 4.792vw, 92px) clamp(20px, 2.5vw, 48px) clamp(25px, 3.75vw, 72px);
+}
+
+.value-box h3 {
+    padding-bottom: clamp(20px, 1.823vw, 35px);
+}
+
+.value-box.title-box {
+    background: var(--secondary);
+}
+
+.value-box.title-box h2 {
+    color: var(--white);
+}
+
+.about-value .row {
+    row-gap: 30px;
+}
+
+.about-choose .title-wrap {
+    max-width: 725px;
+    margin: 0 auto;
+}
+
+.about-choose .choose-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+    row-gap: 24px;
+}
+
+.about-choose .choose-list ul li {
+    width: 33.333%;
+    padding: 0 12px;
+}
+
+.about-choose-box {
+    padding: clamp(20px, 1.979vw, 38px);
+    border-radius: var(--brd-20);
+    background: var(--grey-200);
+}
+
+.about-choose-box .icon-box {
+    width: clamp(60px, 4.688vw, 90px);
+    height: clamp(60px, 4.688vw, 90px);
+    border-radius: 10px;
+    background: var(--primary);
+    margin-bottom: clamp(20px, 2.604vw, 50px);
+}
+
+.about-choose-box h3 {
+    color: var(--primary);
+    padding-bottom: clamp(15px, 2.083vw, 40px);
+}
+
+/* ===== about ===== */
