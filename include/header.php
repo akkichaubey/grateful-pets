@@ -87,11 +87,6 @@
                             <li class="active"><a href="index.php">Home</a></li>
                             <li>
                                 <a href="about-us.php">About Us</a>
-                                <div class="menu-arrow">
-                                    <svg class="icon" width="16" height="16">
-                                        <use xlink:href="assets/images/svgsprit.svg#chevron-down-icon"></use>
-                                    </svg>
-                                </div>
                                 <ul class="sub-menu">
                                     <li><a href="our-team.php">Our Team</a></li>
                                     <li><a href="testimonails.php">Testimonails</a></li>
@@ -99,11 +94,6 @@
                             </li>
                             <li>
                                 <a href="#">Service</a>
-                                <div class="menu-arrow">
-                                    <svg class="icon" width="16" height="16">
-                                        <use xlink:href="assets/images/svgsprit.svg#chevron-down-icon"></use>
-                                    </svg>
-                                </div>
                                 <ul class="sub-menu">
                                     <li><a href="#">Day Care</a></li>
                                     <li><a href="#">Training</a></li>
@@ -112,14 +102,11 @@
                                 </ul>
                             </li>
                             <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Rates</a></li>
+                            <li><a href="javascript:;" data-fancybox
+                                    data-src="https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf">Rates</a>
+                            </li>
                             <li>
                                 <a href="faq.php">Faq</a>
-                                <div class="menu-arrow">
-                                    <svg class="icon" width="16" height="16">
-                                        <use xlink:href="assets/images/svgsprit.svg#chevron-down-icon"></use>
-                                    </svg>
-                                </div>
                                 <ul class="sub-menu">
                                     <li><a href="blog.php">Blog</a></li>
                                 </ul>

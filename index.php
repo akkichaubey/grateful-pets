@@ -206,7 +206,9 @@
                 </ul>
             </div>
             <div class="btn-wrap pt-90 d-flex flex-wrap justify-content-center" data-gsap="fadeUp">
-                <a href="#" class="btn btn-white">View Rates</a>
+                <button type="button" data-fancybox
+                    data-src="https://www.rd.usda.gov/sites/default/files/pdf-sample_0.pdf" class="btn btn-white">View
+                    Rates</button>
                 <a href="#" class="btn btn-secondary">Schedule Tour</a>
                 <a href="#" class="btn btn-white">Book Now</a>
             </div>

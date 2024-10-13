@@ -79,21 +79,50 @@
           <div class="contact-form">
             <h2 class="title-md">Send a Message</h2>
             <form>
-              <div class="row">
-                <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+              <div class="form-row">
+                <div class="col col-50">
+                  <input class="form-control" placeholder="Enter First Name" value="" type="text" name="first-name">
                 </div>
-                <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                <div class="col col-50">
+                  <input class="form-control" placeholder="Enter Last Name" type="text">
                 </div>
-                <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                <div class="col col-50">
+                  <input size="40" maxlength="400" class="form-control" placeholder="Enter Phone Number">
                 </div>
-                <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                <div class="col col-50">
+                  <input class="form-control" placeholder="Enter Email Address" type="email">
                 </div>
-                <div class="col-12">
+                <div class="col">
                   <label>How can we help you?</label>
+                  <span>
+                    <span class="form-checkbox">
+                      <span>
+                        <label>
+                          <input type="checkbox">
+                          <span>Grooming</span>
+                        </label>
+                      </span>
+                      <span>
+                        <label>
+                          <input type="checkbox">
+                          <span>Training</span>
+                        </label>
+                      </span>
+                      <span>
+                        <label>
+                          <input type="checkbox">
+                          <span>Day
+                            Care</span>
+                        </label>
+                      </span>
+                    </span>
+                  </span>
+                </div>
+                <div class="col">
+                  <textarea class="form-control" placeholder="Additional Comments"></textarea>
+                </div>
+                <div class="col btn-wrap">
+                  <input class="btn btn-primary" type="submit" value="Submit">
                 </div>
               </div>
             </form>
