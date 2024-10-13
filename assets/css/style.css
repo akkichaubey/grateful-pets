@@ -1043,6 +1043,10 @@ header .menu>ul>li>.menu-arrow .icon {
         padding: 14px 0;
     }
 
+    header .menu ul li a:empty {
+        display: none;
+    }
+
     header .menu .menu-arrow {
         cursor: pointer;
         width: 44px;
