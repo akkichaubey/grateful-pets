@@ -441,6 +441,14 @@ input:-ms-input-placeholder {
     padding-bottom: clamp(30px, 2.708vw, 52px);
 }
 
+.pb-0 {
+    padding-bottom: 0;
+}
+
+.pt-0 {
+    padding-top: 0;
+}
+
 .row-gap-30 {
     row-gap: 30px;
 }
