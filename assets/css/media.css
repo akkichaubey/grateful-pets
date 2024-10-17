@@ -34,6 +34,15 @@
     .home-about .content-box {
         padding-left: clamp(10px, 3.125vw, 60px);
     }
+
+    .home-about .inner-section:nth-child(even) .row {
+        flex-direction: row-reverse;
+    }
+
+    .home-about .inner-section:nth-child(even) .content-box {
+        padding-right: clamp(10px, 3.385vw, 65px);
+        padding-left: 0;
+    }
 }
 
 /*===== 768 =====*/
@@ -189,6 +198,10 @@
     .related-blog .blog-list>ul>li {
         width: 50%;
     }
+
+    .about-choose .choose-list ul li {
+        width: 50%;
+    }
 }
 
 /*===== 991 =====*/
@@ -295,6 +308,10 @@
     }
 
     .testimonial-wrap .testimonial-list>ul>li {
+        width: 100%;
+    }
+
+    .about-choose .choose-list ul li {
         width: 100%;
     }
 }
