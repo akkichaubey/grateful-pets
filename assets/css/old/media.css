@@ -144,17 +144,6 @@
     .related-blog .blog-list>ul>li {
         padding: 0 15px;
     }
-
-    .service-single .column-wrap {
-        margin: 0 -15px;
-    }
-
-    .service-single .column-wrap>div {
-        padding: 0 15px;
-    }
-    .team-box .team-info .name h3 {
-        padding-right: 120px;
-    }
 }
 
 /*===== 1280 =====*/
@@ -212,11 +201,6 @@
 
     .about-choose .choose-list ul li {
         width: 50%;
-    }
-
-    .service-single .column-wrap>div.col-left,
-    .service-single .column-wrap>div.col-right {
-        width: 100%;
     }
 }
 
@@ -330,10 +314,6 @@
     .about-choose .choose-list ul li {
         width: 100%;
     }
-
-    .contact-form .form-row .col.col-50 {
-        width: 100%;
-    }
 }
 
 @media(max-width:480px) {
@@ -345,6 +325,8 @@
         width: 100%;
         padding-bottom: 40%;
     }
+
+    .blog-box.small .blog-info {}
 }
 
 /*===== 767 =====*/
