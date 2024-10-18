@@ -150,7 +150,9 @@
                 <ul>
                     <li>
                         <div class="about-choose-box text-sm" data-gsap="fadeUp">
-                            <div class="icon-box"></div>
+                            <div class="icon-box">
+                                <img src="./assets/images/expert-icon-1.png" alt="img" width="" height="">
+                            </div>
                             <h3 class="h4">Expert Groomers & Trainers</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Each of our products is designed
                                 and crafted with the utmost attention to detail, ensuring durability, functionality, and
@@ -159,7 +161,9 @@
                     </li>
                     <li>
                         <div class="about-choose-box text-sm" data-gsap="fadeUp">
-                            <div class="icon-box"></div>
+                            <div class="icon-box">
+                                <img src="./assets/images/expert-icon-2.png" alt="img" width="" height="">
+                            </div>
                             <h3 class="h4">Expert Groomers & Trainers</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Each of our products is designed
                                 and crafted with the utmost attention to detail, ensuring durability, functionality, and
@@ -168,7 +172,9 @@
                     </li>
                     <li>
                         <div class="about-choose-box text-sm" data-gsap="fadeUp">
-                            <div class="icon-box"></div>
+                            <div class="icon-box">
+                                <img src="./assets/images/expert-icon-3.png" alt="img" width="" height="">
+                            </div>
                             <h3 class="h4">Expert Groomers & Trainers</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Each of our products is designed
                                 and crafted with the utmost attention to detail, ensuring durability, functionality, and
@@ -177,7 +183,9 @@
                     </li>
                     <li>
                         <div class="about-choose-box text-sm" data-gsap="fadeUp">
-                            <div class="icon-box"></div>
+                            <div class="icon-box">
+                                <img src="./assets/images/expert-icon-4.png" alt="img" width="" height="">
+                            </div>
                             <h3 class="h4">Expert Groomers & Trainers</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Each of our products is designed
                                 and crafted with the utmost attention to detail, ensuring durability, functionality, and
@@ -186,7 +194,9 @@
                     </li>
                     <li>
                         <div class="about-choose-box text-sm" data-gsap="fadeUp">
-                            <div class="icon-box"></div>
+                            <div class="icon-box">
+                                <img src="./assets/images/expert-icon-1.png" alt="img" width="" height="">
+                            </div>
                             <h3 class="h4">Expert Groomers & Trainers</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Each of our products is designed
                                 and crafted with the utmost attention to detail, ensuring durability, functionality, and
@@ -195,7 +205,9 @@
                     </li>
                     <li>
                         <div class="about-choose-box text-sm" data-gsap="fadeUp">
-                            <div class="icon-box"></div>
+                            <div class="icon-box">
+                                <img src="./assets/images/expert-icon-2.png" alt="img" width="" height="">
+                            </div>
                             <h3 class="h4">Expert Groomers & Trainers</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Each of our products is designed
                                 and crafted with the utmost attention to detail, ensuring durability, functionality, and

@@ -1,10 +1,17 @@
 jQuery(document).ready(function () {
-  var headerwrap = jQuery(".header-wrap.sticky-header");
+  var headerwrap = jQuery(".header-wrap");
+  var headerTop = jQuery(headerwrap).find(".head-top");
   jQuery(window).on("load scroll", function () {
-    if (jQuery(this).scrollTop() > 200) {
-      headerwrap.addClass("sticky");
+    var headerTopHeight = headerTop.innerHeight();
+
+    if (jQuery(this).scrollTop() > 30) {
+      jQuery(headerwrap).addClass("sticky");
+      jQuery(headerwrap)
+        .find("header")
+        .css("transform", `translateY(-${headerTopHeight}px)`);
     } else {
-      headerwrap.removeClass("sticky");
+      jQuery(headerwrap).removeClass("sticky");
+      jQuery(headerwrap).find("header").css("transform", "translateY(0)");
     }
   });
 
@@ -210,9 +217,14 @@ document.addEventListener("DOMContentLoaded", function () {
 var testimonialSlider = new Swiper(".testimonial-slider", {
   slidesPerView: 1,
   spaceBetween: 20,
+  speed: 1500,
   navigation: {
     nextEl: ".swiper-testimonial-next",
     prevEl: ".swiper-testimonial-prev",
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
   },
   breakpoints: {
     768: {

@@ -120,7 +120,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="btn-wrap" data-gsap="fadeUp" data-delay="0.2">
+                    <div class="btn-wrap text-center" data-gsap="fadeUp" data-delay="0.2">
                         <a href="#" class="btn">Learn More</a>
                     </div>
                 </div>
